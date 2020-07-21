@@ -17,7 +17,9 @@ class _CommentsPageState extends State<CommentsPage> {
   Widget build(BuildContext context) {
     setState(() {
       CommentRow cr1 = new CommentRow(
-          image: 'neil.jpg', comment: "Awesome work Anna!", name: "Warren B.");
+          image: 'pfp.jpg',
+          comment: "Awesome work Warren!",
+          name: "Matthew L.");
       comments.add(cr1);
       CommentRow cr2 = new CommentRow(
           image: 'girl1.png',
@@ -26,7 +28,8 @@ class _CommentsPageState extends State<CommentsPage> {
       comments.add(cr2);
       CommentRow cr3 = new CommentRow(
           image: 'mel.png',
-          comment: "Would love to do it together next time, send me a message!",
+          comment:
+              "Would love to try to buy as stock as well! You should send me a message and teach me about stocks!",
           name: "Mel G.");
       comments.add(cr3);
     });
@@ -118,7 +121,7 @@ class TitleCommentRow extends StatelessWidget {
               '',
               child: Image(
                   image: AssetImage(
-                    'assets/hill.png',
+                    'assets/neil.jpg',
                   ),
                   fit: BoxFit.cover),
               radius: 25,
@@ -134,11 +137,11 @@ class TitleCommentRow extends StatelessWidget {
                   children: [
                     Padding(
                       padding: const EdgeInsets.fromLTRB(0, 0, 0, 2),
-                      child: AutoSizeText("Julia Hill"),
+                      child: AutoSizeText("Warren Buffet"),
                     ),
                     Container(),
                     Text(
-                      "Amazing time working with California Recycling Inc! Can't wait til next month!",
+                      "So Cool! Had so much fun researching stocks and investing!",
                       style: GoogleFonts.monda(),
                     ),
                   ],

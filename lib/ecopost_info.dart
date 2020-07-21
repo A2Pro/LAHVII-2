@@ -2,22 +2,17 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:provider/provider.dart';
 
 class EcoPostInfo extends ChangeNotifier {
 //  static File _image = File('');
 ////    width: MediaQuery.of(context).size.width,
 ////    height: 300,
 
-
-
   static String _description = "";
 
   static File _selectedImg = File(null);
 
   static String _tagged = "";
-
 
   static bool _shouldShowBack = false;
   static int _activeIndex = 0;
@@ -31,7 +26,6 @@ class EcoPostInfo extends ChangeNotifier {
   bool get showMap => _shouldShowBack;
 
   File get selectedImg => _selectedImg;
-
 
   String get description => _description;
 

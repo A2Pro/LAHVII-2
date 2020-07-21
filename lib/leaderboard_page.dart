@@ -1,13 +1,9 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:circular_profile_avatar/circular_profile_avatar.dart';
 import 'constants.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:material_segmented_control/material_segmented_control.dart';
-
-import 'constants.dart';
 
 const kLeaderboardHeaderFontStyle = TextStyle(
   fontWeight: FontWeight.bold,
@@ -23,14 +19,13 @@ const kWinnersNameFontStyle = TextStyle(
   fontSize: 20,
 );
 
+// ignore: must_be_immutable
 class LeaderboardPage extends StatelessWidget {
 //  @override
 //  _LeaderboardPageState createState() => _LeaderboardPageState();
 //}
 
 //class _LeaderboardPageState extends State<LeaderboardPage> {
-  List<bool> _isSelected = List.generate(3, (_) => false);
-
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;

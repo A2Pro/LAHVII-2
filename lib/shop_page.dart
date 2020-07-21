@@ -21,7 +21,6 @@ class ShopPage extends StatelessWidget {
                   icon: FaIcon(FontAwesomeIcons.pencilAlt),
                   color: Colors.white,
                   onPressed: () {
-                    //TODO: Take to a point submission page
                     Navigator.of(context).pushNamed('/PointsPage');
                   },
                 ),
@@ -63,9 +62,9 @@ class DetailsScreen extends StatelessWidget {
             Stack(
               children: <Widget>[
                 Hero(
-                  tag: 'Give Back or Donate',
+                  tag: 'Pizza Party!',
                   child: Image.asset(
-                    'assets/nature.jpg',
+                    'assets/giftcard.jpg',
                     height: MediaQuery.of(context).size.height / 2 + 65,
                     width: MediaQuery.of(context).size.width,
                     fit: BoxFit.cover,
@@ -96,13 +95,13 @@ class DetailsScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         Text(
-                          'Give Back or Donate',
+                          'Pizza Party!',
                           style: tileItemStyle.copyWith(fontSize: 28),
                         ),
                         ItemPricing(
                           textStyle: tileItemPriceStyle,
                           icon: FaIcon(FontAwesomeIcons.pencilAlt),
-                          price: 300,
+                          price: 299,
                         ),
                       ],
                     ),
@@ -110,7 +109,7 @@ class DetailsScreen extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(top: 20.0),
                     child: Text(
-                        'Give back by donating 5 dollars to your classroom (budget), teacher, or to the charity of your choice.',
+                        'Once everyone in your class has redeemed this reward, there will be a pizza party!!!',
                         style: descriptionStyle),
                   ),
                   QuantitySelector(),

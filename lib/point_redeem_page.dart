@@ -4,6 +4,7 @@ import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+// ignore: must_be_immutable
 class PointRedeemPage extends StatelessWidget {
   ConfettiController _controllerCenter =
       ConfettiController(duration: const Duration(seconds: 10));

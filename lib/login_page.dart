@@ -1,16 +1,12 @@
 import 'constants.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
-//import 'package:apartly/utilities/constants.dart';
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_login/flutter_login.dart';
 import 'package:google_fonts/google_fonts.dart';
-//import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginPage extends StatelessWidget {
 //  final prefs = await SharedPreferences.getInstance();
-  void _handleTap() {}
 
   Future<String> _handleLogin(
       BuildContext context, String name, String Id) async {
@@ -18,11 +14,9 @@ class LoginPage extends StatelessWidget {
 //    await prefs.setString('name', name);
 //    await prefs.setString('Id', Id).then((value) {
 //      //navigate to maiin page
-//      print("Updatuuued");
 //      Navigator.of(context).pushNamed('/HomePage');
 //
 //    });
-//    print("Updatuuued");
 //    Navigator.of(context).pushNamed('/HomePage');
 //    return "Logged In";
   }
@@ -74,7 +68,6 @@ class LoginPage extends StatelessWidget {
               ),
               Positioned(
                 top: 70,
-                left: MediaQuery.of(context).size.width / 4.9,
                 child: Center(
                   child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -85,12 +78,12 @@ class LoginPage extends StatelessWidget {
 //                    totalRepeatCount: 4,
                               isRepeatingAnimation: true,
                               pause: Duration(milliseconds: 1000),
-                              text: ["yeetoof"],
+                              text: ["  Challenge Me!"],
                               textStyle: GoogleFonts.poiretOne(
                                   textStyle: TextStyle(
                                       color: Colors.white,
                                       letterSpacing: 5,
-                                      fontSize: 65)),
+                                      fontSize: 42.72)),
 //                      textStyle: TextStyle(
 //                          color: Colors.white,
 ////                          fontStyle: GoogleFonts.playball(),

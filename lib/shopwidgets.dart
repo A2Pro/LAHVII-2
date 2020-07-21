@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'shop_page.dart';
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 const titleStyle = TextStyle(
@@ -94,9 +93,9 @@ class SmallProductTiles extends StatelessWidget {
                 Flexible(
                   flex: 5,
                   child: SmallProductTile(
-                    name: 'HW Pass',
+                    name: 'Give Back',
                     price: 299,
-                    asset: 'assets/giftcard.png',
+                    asset: 'assets/nature.jpg',
                     padding: const EdgeInsets.only(right: 14.0),
                   ),
                 ),
@@ -144,9 +143,9 @@ class BigProductTile extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(8.0),
                 child: Hero(
-                  tag: 'nature',
+                  tag: 'Pizza Party',
                   child: Image.asset(
-                    'assets/nature.jpg',
+                    'assets/giftcard.jpg',
                     alignment: Alignment.center,
                     fit: BoxFit.cover,
                     width: MediaQuery.of(context).size.width,
@@ -161,7 +160,7 @@ class BigProductTile extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Text(
-                    'Donate or Give Back',
+                    'Pizza Party!',
                     style: tileItemStyle,
                   ),
                   ItemPricing(

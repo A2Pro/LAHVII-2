@@ -6,7 +6,7 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="16"
-9        android:targetSdkVersion="28" />
+9        android:targetSdkVersion="30" />
 10    <!--
 11         Flutter needs it to communicate with the running application
 12         to allow setting breakpoints, to provide hot reload, etc.
@@ -145,11 +145,11 @@
 93-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\nelso\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
 94
 95        <meta-data
-95-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\nelso\.gradle\caches\transforms-2\files-2.1\45b61f1c6f187f00ca9052198fbe0561\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+95-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\nelso\.gradle\caches\transforms-2\files-2.1\4b685cf17075df69169b5b1cae9fa564\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
 96            android:name="com.google.android.gms.version"
-96-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\nelso\.gradle\caches\transforms-2\files-2.1\45b61f1c6f187f00ca9052198fbe0561\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+96-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\nelso\.gradle\caches\transforms-2\files-2.1\4b685cf17075df69169b5b1cae9fa564\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
 97            android:value="@integer/google_play_services_version" />
-97-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\nelso\.gradle\caches\transforms-2\files-2.1\45b61f1c6f187f00ca9052198fbe0561\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+97-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\nelso\.gradle\caches\transforms-2\files-2.1\4b685cf17075df69169b5b1cae9fa564\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
 98    </application>
 99
 100</manifest>

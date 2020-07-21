@@ -1,9 +1,7 @@
-import 'ecopost_info.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:provider/provider.dart';
 
 class BackCard extends StatelessWidget {
   static final Completer<GoogleMapController> mController = Completer();
@@ -16,7 +14,6 @@ class BackCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var postInfo = Provider.of<EcoPostInfo>(context);
 //    var markerIdVal = MyWayToGenerateId();
     final MarkerId markerId = MarkerId("24213");
     Set<Marker> mrks = new Set<Marker>();
@@ -62,7 +59,6 @@ class BackCard extends StatelessWidget {
                             target: LatLng(lat, long), zoom: 15.0),
                         markers: mrks,
 //        markers: mapInfo.fireMarkers,
-                        // TODO: addmarkers
                         onMapCreated: (GoogleMapController controller) async {
 //          SharedPreferences prefs = await SharedPreferences.getInstance();
 //          controller.setMapStyle(mapInfo.mapStyle);
@@ -89,7 +85,6 @@ class BackCard extends StatelessWidget {
 //        initialCameraPosition:
 //            CameraPosition(target: LatLng(lat, long), zoom: 10.0),
 ////        markers: mapInfo.fireMarkers,
-//        // TODO: addmarkers
 //        onMapCreated: (GoogleMapController controller) async {
 ////          SharedPreferences prefs = await SharedPreferences.getInstance();
 ////          controller.setMapStyle(mapInfo.mapStyle);

@@ -3,19 +3,11 @@ import 'dart:io';
 import 'dart:typed_data';
 import 'dart:async';
 
-//import 'package:dio/dio.dart';
-import 'ecopost_info.dart';
 import 'keys.dart';
 import 'post.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:path/path.dart';
-import 'package:async/async.dart';
-import 'package:http/http.dart' as http;
-import 'package:flutter/services.dart' show rootBundle;
 
-import 'package:path_provider/path_provider.dart';
-import 'package:provider/provider.dart';
-//import 'package:http/http.dart' as http;
+import 'package:http/http.dart' as http;
 
 class Requests {
 //  var url = 'http://169.254.111.186:8000';
@@ -24,12 +16,6 @@ class Requests {
 //    var response = await HttpClient().get(Uri.parse(""));
 //    return response.body;
 //  }
-
-  static Future<String> get _localPath async {
-    final directory = await getApplicationDocumentsDirectory();
-
-    return directory.path;
-  }
 
   static Future<File> uploadImage(File fileImg) async {
     var path = "/upload_image";
@@ -84,7 +70,6 @@ class Requests {
 
   static Future<File> uploadNewPost(File fileImg, String description,
       String handles, String hashtag, String challenges) async {
-    var path = "/send_post";
 //    var postInfo = Provider.of<EcoPostInfo>(EcoPostInfo);
 
 //    Future<String> networkImageToBase64(String imageUrl) async {

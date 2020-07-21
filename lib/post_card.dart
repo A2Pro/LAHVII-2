@@ -1,17 +1,12 @@
-import 'ecopost_info.dart';
 import 'constants.dart';
-import 'requests.dart';
 import 'back_card_post.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:badges/badges.dart';
-import 'package:circular_profile_avatar/circular_profile_avatar.dart';
 import 'package:flip/flip.dart';
-import 'package:flip_card/flip_card.dart';
 import 'package:floating_ribbon/floating_ribbon.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:skeleton_text/skeleton_text.dart';
 
 //
@@ -55,9 +50,6 @@ class PostCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var postInfo = Provider.of<EcoPostInfo>(context);
-    bool isFront = postInfo.showMap;
-    Key mKey = Key(DateTime.now().toString());
     return GestureDetector(
       onTap: () {
         controller.flip();

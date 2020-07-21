@@ -1,16 +1,12 @@
-import 'around_me_page.dart';
 import 'comments_page.dart';
 import 'home_page.dart';
 import 'leaderboard_page.dart';
 import 'login_page.dart';
-import 'point_redeem_page.dart';
 import 'shop_page.dart';
 import 'constants.dart';
 import 'my_profile_page.dart';
 
 import 'package:flutter/material.dart';
-
-import 'profile_page.dart';
 
 void main() => runApp(MyApp());
 

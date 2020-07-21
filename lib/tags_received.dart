@@ -1,5 +1,4 @@
 import 'constants.dart';
-import 'post_card.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:circular_profile_avatar/circular_profile_avatar.dart';
 import 'package:flutter/cupertino.dart';
@@ -53,7 +52,7 @@ class _TagReceivedCardState extends State<TagReceivedCard> {
         color: Colors.white,
         width: MediaQuery.of(context).size.width * 0.95,
         topCardHeight: 350,
-        bottomCardHeight: 400,
+        bottomCardHeight: 200,
         borderRadius: 25,
         topCardWidget: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -78,7 +77,7 @@ class _TagReceivedCardState extends State<TagReceivedCard> {
               backgroundColor: Colors.deepPurple,
               padding: EdgeInsets.all(5),
               label: Text(
-                "20 pushups",
+                "Compete in the S4 competition!",
                 style: GoogleFonts.monda(fontSize: 15, color: Colors.white),
               ),
             ),
@@ -86,7 +85,7 @@ class _TagReceivedCardState extends State<TagReceivedCard> {
               backgroundColor: Colors.deepPurple,
               padding: EdgeInsets.all(5),
               label: Text(
-                "Make Breakfast for Parents",
+                "Learn about Investing!",
                 style: GoogleFonts.monda(fontSize: 15, color: Colors.white),
               ),
             ),
@@ -139,7 +138,8 @@ class _TagReceivedCardState extends State<TagReceivedCard> {
                           Row(
                             children: [
                               Countdown(
-                                seconds: 60,
+                                // ignore: non_constant_identifier_names, missing_return
+                                seconds: 60, build: (BuildContext, double) {},
                               ),
                               Text(
                                 "s",

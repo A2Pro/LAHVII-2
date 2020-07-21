@@ -1,16 +1,12 @@
 import 'package:EcoPost/leaderboard_page.dart';
-import 'around_me_page.dart';
 import 'challenge_page.dart';
 import 'explore_page.dart';
 import 'new_post_page.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'ecopost_info.dart';
 import 'constants.dart';
-import 'requests.dart';
-import 'post_card.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
-import 'package:flip_card/flip_card.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -39,8 +35,8 @@ class MyHome extends StatelessWidget {
           child: Scaffold(
               appBar: AppBar(
                 backgroundColor: Constants.themeGreen,
-                title: AutoSizeText('yeetoof',
-                    minFontSize: 35,
+                title: AutoSizeText('Challenge',
+                    minFontSize: 27,
                     style: GoogleFonts.poiretOne(
                         textStyle: TextStyle(
                       color: Colors.white,
@@ -68,10 +64,9 @@ class MyHome extends StatelessWidget {
                             icon: FaIcon(FontAwesomeIcons.pencilAlt),
                             color: Colors.white,
                             onPressed: () async {
-                              //TODO: Take to a point submission page
                               Navigator.of(context).pushNamed('/PointsPage');
                             }),
-                        AutoSizeText("Redeem Points")
+                        AutoSizeText("Redeem Pts")
                       ],
                     ),
                   )

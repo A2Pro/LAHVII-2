@@ -7,12 +7,10 @@ import 'requests.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 
 class NewPostPage extends StatefulWidget {
@@ -29,8 +27,8 @@ class _NewPostPageState extends State<NewPostPage> {
 
   Future getImage(BuildContext context, bool fromCamera) async {
     print("PICKING");
-    File image;
     if (fromCamera)
+      // ignore: deprecated_member_use
       await ImagePicker.pickImage(source: ImageSource.camera)
           .then((value) async {
         setState(() {
@@ -42,6 +40,7 @@ class _NewPostPageState extends State<NewPostPage> {
 //        showPictureSuccessDialog(context);
       });
     else {
+      // ignore: deprecated_member_use
       await ImagePicker.pickImage(source: ImageSource.gallery)
           .then((value) async {
         setState(() {
@@ -168,7 +167,6 @@ class _NewPostPageState extends State<NewPostPage> {
                   elevation: 24,
                   child: FlatButton(
                     onPressed: () async {
-                      File img = await showPictureSourceDialog(context);
                       showPictureSourceDialog(context);
 
 //                    setImageOnScreen(img);

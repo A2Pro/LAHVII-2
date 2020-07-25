@@ -29,7 +29,7 @@ class _CommentsPageState extends State<CommentsPage> {
       CommentRow cr3 = new CommentRow(
           image: 'mel.png',
           comment:
-              "Would love to try to buy as stock as well! You should send me a message and teach me about stocks!",
+              "Would love to try to buy a stock as well! You should send me a message and teach me about stocks!",
           name: "Mel G.");
       comments.add(cr3);
     });

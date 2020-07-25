@@ -102,7 +102,7 @@ class SmallProductTiles extends StatelessWidget {
                 Flexible(
                   flex: 5,
                   child: SmallProductTile(
-                    name: '\$5 gift card :)',
+                    name: '\$5 gift card',
                     price: 499,
                     asset: 'assets/audible.jpg',
                     padding: const EdgeInsets.only(left: 14.0),

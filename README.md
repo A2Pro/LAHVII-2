@@ -1,6 +1,6 @@
 # About this project!
 
-# S4 Super Summer Science Search -- *Challenge Me!*
+# S4 Super Summer Science Search -- *All-In-One*
 
 * * *
 
@@ -8,8 +8,8 @@
 
 Discord Username:
 
--   Matthew Leung (@sleeping_addict #7628)
+-   Matthew Leung (@ender_garden#0001)
     
 ### What it Does
 
-It's an app to improve the state of distance learning.
+It's an app to improve the state of recycling
